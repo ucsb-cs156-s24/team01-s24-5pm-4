@@ -2,8 +2,6 @@ package edu.ucsb.cs156.spring.backenddemo.services;
 
 
 
-import com.fasterxml.jackson.databind.ObjectMapper;
-
 import org.springframework.http.MediaType;
 import org.springframework.web.client.RestTemplate;
 
