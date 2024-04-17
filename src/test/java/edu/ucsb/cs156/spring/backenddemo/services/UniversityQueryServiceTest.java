@@ -22,14 +22,15 @@ public class UniversityQueryServiceTest {
     @Test
     public void test_getJSON(){
         String name = "University of California";
+        String serialized = "University%20of%20California";
 
-        String expectedURL = UniversityQueryService.ENDPOINT.replace("{name}", name);
+        String expectedURL = UniversityQueryService.ENDPOINT.replace("{name}", serialized);
 
         String fakeJsonResult = "{ \"fake\" : \"result\" }";
 
         this.mockRestServiceServer.expect(requestTo(expectedURL))
                 .andExpect(header("Accept", MediaType.APPLICATION_JSON.toString()))
-                .andExpect(header("Content=Type", MediaType.APPLICATION_JSON.toString()))
+                .andExpect(header("Content-Type", MediaType.APPLICATION_JSON.toString()))
                 .andRespond(withSuccess(fakeJsonResult, MediaType.APPLICATION_JSON));
 
         String actualResult = universityQueryService.getJSON(name);
