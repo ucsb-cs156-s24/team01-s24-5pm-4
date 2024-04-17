@@ -37,7 +37,7 @@ public class JokeQueryServiceTests {
                 .andExpect(header("Content-Type", MediaType.APPLICATION_JSON.toString()))
                 .andRespond(withSuccess(fakeJsonResult, MediaType.APPLICATION_JSON));
 
-        String actualResult = jokeQueryService.getJSON(category, numJokes);
+        String actualResult = jokeQueryService.getJSON(category, numJokes); 
         assertEquals(fakeJsonResult, actualResult);
     }
 }
