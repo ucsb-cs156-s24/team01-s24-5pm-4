@@ -39,11 +39,12 @@ public class TidesQueryService {
 
     public String getJSON(String beginDate, String endDate, String station) throws HttpClientErrorException {
         log.info("beginDate={}, endDate={}, station={}", beginDate, endDate, station);
+        
         HttpHeaders headers = new HttpHeaders();
         headers.setAccept(List.of(MediaType.APPLICATION_JSON));
         headers.setContentType(MediaType.APPLICATION_JSON);
 
-        HttpEntity<String> entity = new HttpEntity<>(headers);
+        HttpEntity<String> entity = new HttpEntity<>("body", headers);
 
         Map<String, String> uriVariables = Map.of("beginDate", beginDate, "endDate", endDate, "station", station);
         
