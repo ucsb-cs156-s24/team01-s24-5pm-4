@@ -23,4 +23,4 @@ repo_name: "TBD"
 repo: ucsb-cs156-s24/team01-s24-5pm-4
 owner: ucsb-cs156-s24
 repo_name: team01-s24-5pm-4
-pull_requests: [{"author":{"id":"U_kgDOBX3Lkw","is_bot":false,"login":"ElijahCanderson","name":""},"headRefName":"Eli","number":20,"title":"LocationQueryService, Service Setup and Tests with complete coverage.","url":"https://github.com/ucsb-cs156-s24/team01-s24-5pm-4/pull/20"}]
+pull_requests: [{"author":{"id":"MDQ6VXNlcjUxNTIwMzU4","is_bot":false,"login":"SR33G33","name":"Sreeganesh Siva"},"headRefName":"Sreeganesh-HomeController","number":25,"title":"ss - added repo link and names of team members to homeController","url":"https://github.com/ucsb-cs156-s24/team01-s24-5pm-4/pull/25"}]
