@@ -44,7 +44,7 @@ public class TidesQueryService {
         headers.setAccept(List.of(MediaType.APPLICATION_JSON));
         headers.setContentType(MediaType.APPLICATION_JSON);
 
-        HttpEntity<String> entity = new HttpEntity<>("body", headers);
+        HttpEntity<String> entity = new HttpEntity<>(headers);
 
         Map<String, String> uriVariables = Map.of("beginDate", beginDate, "endDate", endDate, "station", station);
         
