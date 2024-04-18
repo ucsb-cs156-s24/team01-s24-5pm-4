@@ -23,4 +23,4 @@ repo_name: "TBD"
 repo: ucsb-cs156-s24/team01-s24-5pm-4
 owner: ucsb-cs156-s24
 repo_name: team01-s24-5pm-4
-pull_requests: [{"author":{"id":"MDQ6VXNlcjUxNTIwMzU4","is_bot":false,"login":"SR33G33","name":"Sreeganesh Siva"},"headRefName":"Sreeganesh-HomeController","number":25,"title":"ss - added repo link and names of team members to homeController","url":"https://github.com/ucsb-cs156-s24/team01-s24-5pm-4/pull/25"}]
+pull_requests: [{"author":{"id":"U_kgDOBdC-lQ","is_bot":false,"login":"Simonmann17","name":""},"headRefName":"Simon-Tides","number":26,"title":"Add Tides Service and Tests","url":"https://github.com/ucsb-cs156-s24/team01-s24-5pm-4/pull/26"},{"author":{"id":"MDQ6VXNlcjUxNTIwMzU4","is_bot":false,"login":"SR33G33","name":"Sreeganesh Siva"},"headRefName":"Sreeganesh-HomeController","number":25,"title":"ss - added repo link and names of team members to homeController","url":"https://github.com/ucsb-cs156-s24/team01-s24-5pm-4/pull/25"}]
