@@ -35,7 +35,7 @@ public class LocationController {
     @Operation(summary = "Gets Latitude and Longitude of location ", description = "Api documented at https://nominatim.org/release-docs/develop/api/Search/")
     @GetMapping("/get")
     public ResponseEntity<String> getLocation(
-        @Parameter(name="location", description="name of location", example="Berlin") @RequestParam String location
+        @Parameter(name="location", description="name to search, e.g. 'Isla Vista' or 'Eiffel Tower'", example="Isla Vista") @RequestParam String location
     ) throws JsonProcessingException {
         log.info("getLocation: location={}", location);
         String result = locationQueryService.getJSON(location);

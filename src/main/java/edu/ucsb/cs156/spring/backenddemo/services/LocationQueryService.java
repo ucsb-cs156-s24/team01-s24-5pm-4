@@ -18,7 +18,7 @@ import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.HttpClientErrorException;
-
+@Slf4j
 @Service
 public class LocationQueryService {
 
@@ -28,9 +28,9 @@ public class LocationQueryService {
         restTemplate = restTemplateBuilder.build();
     }
 
-    public static final String ENDPOINT = "https://nominatim.openstreetmap.org/search/search.php?q={location}&format=jsonv2";
-
+    public static final String ENDPOINT = "https://nominatim.openstreetmap.org/search?q={location}&format=jsonv2";
     public String getJSON(String location) throws HttpClientErrorException {
+        log.info("location={}", location);
         HttpHeaders headers = new HttpHeaders();
         headers.setAccept(List.of(MediaType.APPLICATION_JSON));
         headers.setContentType(MediaType.APPLICATION_JSON);
