@@ -35,7 +35,7 @@ import io.swagger.v3.oas.annotations.tags.Tag;
     @Operation(summary = &quot;Gets Latitude and Longitude of location &quot;, description = &quot;Api documented at https://nominatim.org/release-docs/develop/api/Search/&quot;)
     @GetMapping(&quot;/get&quot;)
     public ResponseEntity&lt;String&gt; getLocation(
-        @Parameter(name=&quot;location&quot;, description=&quot;name of location&quot;, example=&quot;Berlin&quot;) @RequestParam String location
+        @Parameter(name=&quot;location&quot;, description=&quot;name to search, e.g. 'Isla Vista' or 'Eiffel Tower'&quot;, example=&quot;Isla Vista&quot;) @RequestParam String location
     ) throws JsonProcessingException {
 <span class="fc" id="L40">        log.info(&quot;getLocation: location={}&quot;, location);</span>
 <span class="fc" id="L41">        String result = locationQueryService.getJSON(location);</span>
